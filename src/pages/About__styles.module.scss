@@ -1,0 +1,22 @@
+.about {
+    margin: 100px 0px;
+    ul{
+        font-weight: bold;
+    }
+  }
+  .about__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .about__photo {
+    max-width: 300px;
+  }
+  .about__list {
+    margin-top: 20px;
+
+  }
+  .about__descrText {
+    font-weight: bold;
+  }

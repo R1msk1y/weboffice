@@ -1,8 +1,9 @@
+import Header__styles from './Header__styles.module.scss'
 const Header = () => {
   return (
-    <header class="header">
-      <div class="header__wrapper">
-        <h1 class="header__title">
+    <header className={Header__styles.header}>
+      <div className={Header__styles.header__wrapper}>
+        <h1 className={Header__styles.header__title}>
           <strong>
             Здравствуйте, меня зовут<em> Василий</em>
           </strong>

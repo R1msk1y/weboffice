@@ -1,6 +1,5 @@
 import Work from "../components/work/Work";
-import { data } from "./../helpers/projectList";
-
+import { data } from "../helpers/projectList";
 
 const Projects = () => {
   return (
@@ -8,7 +7,6 @@ const Projects = () => {
       <div className="container">
         <h2 className="title-1">Мои проекты</h2>
         <ul className="projects">
-          
           {data.map((onceProject, index) => {
             return (
               <Work
@@ -20,7 +18,6 @@ const Projects = () => {
               />
             );
           })}
-          ;
         </ul>
       </div>
     </div>

@@ -1,25 +1,21 @@
-import moon from "./../../img/icons/moon.svg";
-import sun from "./../../img/icons/sun.svg";
 import { NavLink } from "react-router-dom";
+import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
+import Navbar__style from "./Navbar__style.module.scss";
 
 const Navbar = () => {
   const activeLink = "nav-list__link nav-list__link--active";
   const normalLink = "nav-list__link";
 
   return (
-    <nav className="nav">
+    <nav className={Navbar__style.nav}>
       <div className="nav__container">
-        <div className="nav-row">
-          <NavLink to="/" className="logo">
+        <div className={Navbar__style.navRow}>
+          <NavLink to="/" className={Navbar__style.logo}>
             <strong>Портфолио</strong>
           </NavLink>
+          <BtnDarkMode />
 
-          <button className="dark-mode-btn">
-            <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
-            <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
-          </button>
-
-          <ul className="nav-list">
+          <ul className='nav-list'>
             <li className="nav-list__item">
               <NavLink
                 className={({ isActive }) => {
